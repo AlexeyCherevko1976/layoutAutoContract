@@ -1,0 +1,30 @@
+@media (max-width: 768px) and (min-width: 480px) {
+  .row .col.w1-1-t {
+    width: 100%;
+    float: none;
+  }
+  .row .col.w1-2-t {
+    width: 50%;
+  }
+  .row .col.w1-3-t {
+    width: 33.333%;
+  }
+  .row .col.w1-4-t {
+    width: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .row .col.w1-1-p {
+    width: 100%;
+    float: none;
+  }
+  .row .col.w1-2-p {
+    width: 50%;
+  }
+  .row .col.w1-3-p {
+    width: 33.333%;
+  }
+  .row .col.w1-4-p {
+    width: 25%;
+  }
+}
