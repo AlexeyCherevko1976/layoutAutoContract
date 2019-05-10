@@ -1,0 +1,32 @@
+@import "variables.less";
+.posAbs(@t:20px, @l:20px, @w:20px, @h:20px){
+    position: absolute;
+    top: @t;
+    left: @l;
+    width: @w;
+    height: @h;
+}
+/*.tablePart_cell(@nLine:0, @nCol:0){
+	.tablePart_data();
+    position: absolute;
+    top: @t0+(@dt+@h)*@nLine;
+    left: @l0+(@dl+@w)*@nCol;
+    width: @w;
+    height: @h;
+}*/
+.tablePart_cell(@nLine:0, @nCol:0){
+	.tablePart_data();
+    position: absolute;top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
+}
+	
+.tablePart_txt(@nLine:0, @nCol:0){	
+	@t0:177px;@dt:13px;@h:16px;font-size:16px;
+	@l0:29px;@dl:0px;@w:230px; position: absolute;
+	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
+}
+
+.options-cell(@nLine:0, @nCol:0){	
+	@t0:34px;@dt:27px;@h:73px;
+	@l0:20px;@dl:0px;@w:260px; position: absolute;
+	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
+}
