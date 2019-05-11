@@ -6,14 +6,7 @@
     width: @w;
     height: @h;
 }
-/*.tablePart_cell(@nLine:0, @nCol:0){
-	.tablePart_data();
-    position: absolute;
-    top: @t0+(@dt+@h)*@nLine;
-    left: @l0+(@dl+@w)*@nCol;
-    width: @w;
-    height: @h;
-}*/
+
 .tablePart_cell(@nLine:0, @nCol:0){
 	.tablePart_data();
     position: absolute;top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
@@ -28,5 +21,12 @@
 .options-cell(@nLine:0, @nCol:0){	
 	@t0:34px;@dt:27px;@h:73px;
 	@l0:20px;@dl:0px;@w:260px; position: absolute;
+	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
+}
+
+.newArrival-cell(@nLine:0, @nCol:0){
+// .newArrival-0{.posAbs(0px,0px,295px,322px);background:red;}	
+	@t0:0px;@dt:10px;@h:322px;
+	@l0:0px;@dl:10px;@w:295px; position: absolute;
 	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
 }
