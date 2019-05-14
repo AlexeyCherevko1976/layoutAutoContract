@@ -1,0 +1,22 @@
+@import "variables.less";
+@import "function.less";
+
+@media (min-width: @media-large_minWidth) {
+  .headerLg(){@t:0px; @l:0px; @w:900px; @h:600px;}
+.col-lg.wrapper{
+  .header{
+    .posAbs(0px,0px,900px,600px);
+    background: coral;  
+    color: red;
+  }
+  .contain{
+    position: absolute;
+    top:300px;
+    left:0px;
+    width: 700px;
+    height: 300px;
+    background: ForestGreen;  
+    color: red;
+  }
+}
+}
