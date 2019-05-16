@@ -8,7 +8,12 @@
 }
 
 .tablePart_cell(@nLine:0, @nCol:0){
-	.tablePart_data();
+	@t0:20px; 
+	@dt:20px; 
+	@l0:20px; 
+	@dl:20px; 
+	@w:260px; 
+	@h:426px;
     position: absolute;top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
 }
 	

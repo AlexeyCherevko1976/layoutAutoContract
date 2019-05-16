@@ -5,26 +5,37 @@
 @import "main-lg.less";
 
 
-.wrapper{background: #f8f8f8;
+.wrapper{background: #ffffff;
   .header{background:#f8f8f8;color: blue;}
-        .header_numProducts_txt{
-          font-family: Open Sans;
-          font-size: 8px;
-          line-height: 6px;
-          color: #f8f8f8;
-        }
-     
-    .header_lock{background:#db001b;&:hover{background:#ea142e};} 
+    .header-basket-lbl_txt{font-weight: bold;color:#ffffff;font-family: Arial, serif;text-align: center;}
 
-    .headerBlurb_tlf{font-size:16px;font-weight: bold;color:@colorTablePart;}
-    .headerBlurb_txt{font-size:12px;font-weight: normal;color:#aabbc4;}
+    .header_lock{background:#db001b;&:hover{background:#ea142e};} 
+      .header_lock_txt{font-size:16px;color:#ffffff;}
+      .header_reg{font-size:16px;color:#ffffff;}
+        .reg_img{background-image: url(../img/main-reg_img.png);}
+        .reg_txt{font-size: 12px;font-weight: bold;color:#dd162f;}
+  .headerBlurb-inf_tlf{font-size:16px;font-weight: bold;color:#323338;border-bottom: 2px dashed #323338}
+  .headerBlurb-inf_txt{font-size:11px;color:#aabbc4;}
+
   
   .searchSite{background:#323338;border-radius: 3px;}
         .tablePart-txt{font-family: Arial, serif;color:@colorTablePart;}
         .tablePart_header{font-size:20px;font-family:Arial;font-weight: bold;color:@colorTablePart;background:@colorPhone;}
-    
-    .tablePart-engine{background:@colorPhone;} 
-    
+.searchSite_search {
+ .posAbs(13px,15px,151px,22px);
+  padding-left: 30px;
+  font-family: Arial, serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #000000;
+  background: url(../img/main-searchSite_search.png) no-repeat center left;
+}
+.searchSite_btn{background-image: url(../img/main-searchSite_btn.png);&:hover{background-image: url(../img/main-searchSite_btn-hover.png);}}    
+
+.tablePart{a{text-decoration: none;color:#323338;&:hover{color:#252f96;}}}
+//.tablePart{font-weight: bolder;font-size: 20px;}
+    .tablePart-engine{background:@colorPhone;}    
     .tablePart-chassis{background:@colorPhone;}    
     .tablePart-bodyParts{background:@colorPhone;}
     
