@@ -23,7 +23,7 @@
 	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
 }
 
-.options-cell(@nLine:0, @nCol:0){	
+.options-cell(@nLine:0, @nCol:0){  	
 	@t0:34px;@dt:27px;@h:73px;
 	@l0:20px;@dl:0px;@w:260px; position: absolute;
 	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
@@ -35,3 +35,8 @@
 	@l0:0px;@dl:10px;@w:295px; position: absolute;
 	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h;
 }
+
+.cellM(@nLine:0, @nCol:0, @t0,@dt,@h,@l0,@dl,@w){
+	top: @t0+(@dt+@h)*@nLine;left: @l0+(@dl+@w)*@nCol;width: @w;height: @h; position: absolute;
+}
+
